@@ -36,6 +36,7 @@ body {
   white-space: pre;
   overflow-x: auto;
   color: var(--accent);
+  margin-top: 0;
   margin-bottom: 0.3rem;
   opacity: 0;
   animation: fadeDownMuted 0.8s ease forwards 0.1s;
@@ -53,7 +54,7 @@ body {
 /* ---------- Header ---------- */
 header {
   max-width: var(--max-w);
-  margin: 3rem auto 1.5rem auto;
+  margin: 1rem auto 0.5rem auto;
   padding: 0 1.5rem;
 }
 
@@ -63,7 +64,8 @@ header {
   font-weight: bold;
   color: var(--accent);
   letter-spacing: 0.03em;
-  margin-bottom: 0.4rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
   opacity: 0;
   animation: fadeDown 0.8s ease forwards 0.4s;
 }
@@ -71,6 +73,8 @@ header {
 .tagline {
   font-size: 0.9rem;
   color: var(--muted);
+  margin-top: 0;
+  margin-bottom: 0.2rem;
   opacity: 0;
   animation: fadeDown 0.8s ease forwards 0.6s;
 }
