@@ -15,6 +15,7 @@
   --accent-h: #2d7a42;
   --rule:     #a0a88a;
   --card-bg:  #e8ebe0;
+  --card-hover: #dde3d1;
   --max-w:    780px;
   --font:     'Courier Prime', 'Courier New', Courier, monospace;
 }
@@ -202,7 +203,7 @@ ul li:hover { transform: translateX(4px); }
 
 .paper-card:hover {
   border-color: var(--accent);
-  background: #dde3d1;
+  background: var(--card-hover);
   transform: translateX(3px);
 }
 
@@ -224,7 +225,7 @@ ul li:hover { transform: translateX(4px); }
 
 .paper-title {
   display: block;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--accent);
   line-height: 1.4;
@@ -243,8 +244,8 @@ a.paper-title:hover {
   line-height: 1.4;
   display: flex;
   gap: 0.5rem;
-  align-items: baseline;
-  color: #2a2a2a;
+  align-items: flex-start;
+  color: var(--text);
 }
 
 .paper-label {
@@ -299,7 +300,7 @@ a.paper-title:hover {
 }
 
 .paper-card.is-open .paper-body {
-  background: #dde3d1;
+  background: var(--card-hover);
 }
 
 .paper-body .paper-links {
@@ -315,9 +316,9 @@ a.paper-title:hover {
 
 .course-title {
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-bottom: 0.3rem;
-  color: var(--text);
+  color: var(--accent);
 }
 
 .course-note {
@@ -345,21 +346,12 @@ a.paper-title:hover {
 
 .teaching-card:hover {
   border-color: var(--accent);
-  background: #dde3d1;
+  background: var(--card-hover);
   transform: translateX(3px);
 }
 
 .teaching-card .paper-title {
   margin-bottom: 0.25rem;
-}
-
-.paper-row {
-  font-size: 0.87rem;
-  line-height: 1.4;
-  display: flex;
-  gap: 0.5rem;
-  align-items: flex-start;
-  color: #2a2a2a;
 }
 
 /* ---------- Other writing cards ---------- */
@@ -373,13 +365,13 @@ a.paper-title:hover {
 
 .writing-card:hover {
   border-color: var(--accent);
-  background: #dde3d1;
+  background: var(--card-hover);
   transform: translateX(3px);
 }
 
 .writing-title {
   display: block;
-  font-size: 0.97rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--accent);
   text-decoration: none;
@@ -404,12 +396,12 @@ a.writing-title:hover {
 
 .news-card:hover {
   border-color: var(--accent);
-  background: #dde3d1;
+  background: var(--card-hover);
   transform: translateX(3px);
 }
 
 .news-card h4 {
-  font-size: 0.97rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--accent);
   margin: 0 0 0.5rem 0;
@@ -422,7 +414,7 @@ a.writing-title:hover {
 }
 
 .news-card ul li {
-  font-size: 0.87rem;
+  font-size: 0.88rem;
   line-height: 1.5;
   margin-bottom: 0.3rem;
 }
