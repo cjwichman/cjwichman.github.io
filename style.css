@@ -153,6 +153,35 @@ main {
 }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
+/* ---------- Draw-in separator ---------- */
+.separator.draw-in {
+  position: relative;
+  height: 1em;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.separator.draw-in::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background: repeating-linear-gradient(
+    to right,
+    var(--rule) 0px,
+    var(--rule) 6px,
+    transparent 6px,
+    transparent 10px
+  );
+  transition: width 0.8s ease 0.2s;
+}
+
+.separator.draw-in.visible::after {
+  width: 100%;
+}
+
 /* ---------- Headings ---------- */
 h2 {
   font-size: 1.15rem;
@@ -456,6 +485,8 @@ footer p { margin-top: 0.5rem; }
 @media (max-width: 600px) {
   .ascii-header { font-size: 0.38rem; }
   .nature-scene { font-size: 0.5rem; }
-  .site-name { font-size: 1.5rem; }
+  .site-name { font-size: 1.7rem; }
+  #sticky-nav { padding: 0.3rem 1rem; font-size: 0.78rem; }
+  .themes-bar { padding: 0.2rem 1rem; font-size: 0.78rem; }
   body { font-size: 0.95rem; }
 }
