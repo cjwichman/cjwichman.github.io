@@ -27,7 +27,7 @@ body {
   color: var(--text);
   font-family: var(--font);
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 /* ---------- Nature scene ---------- */
@@ -432,6 +432,9 @@ a.paper-title:hover {
   padding: 0.7rem 0.9rem;
   margin-bottom: 0.6rem;
   transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
 }
 
 .writing-card:hover {
@@ -505,7 +508,8 @@ footer p { margin-top: 0.5rem; }
   .ascii-header { font-size: 0.38rem; }
   .nature-scene { font-size: 0.5rem; }
   .site-name { font-size: 1.7rem; }
-  #sticky-nav { padding: 0.3rem 1rem; font-size: 0.78rem; }
+  #sticky-nav { position: fixed; top: 0; left: 0; right: 0; padding: 0.3rem 1rem; font-size: 0.78rem; }
   .themes-bar { padding: 0.2rem 1rem; font-size: 0.78rem; }
-  body { font-size: 0.95rem; }
+  body { font-size: 0.95rem; padding-top: 3rem; }
+  .paper-icon { width: 1.3rem; height: 1.3rem; }
 }
