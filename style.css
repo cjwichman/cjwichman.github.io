@@ -338,6 +338,22 @@ a.paper-title:hover {
   padding-top: 0.4rem;
 }
 
+/* ---------- Paper icon ---------- */
+.paper-icon {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.15rem;
+}
+
+.paper-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* ---------- Teaching ---------- */
 .teaching-course {
   margin-bottom: 1.2rem;
@@ -370,6 +386,9 @@ a.paper-title:hover {
   padding: 0.7rem 0.9rem;
   margin-bottom: 0.6rem;
   transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
 }
 
 .wip-card:hover {
