@@ -334,6 +334,29 @@ a.paper-title:hover {
   font-style: italic;
 }
 
+/* ---------- WIP cards ---------- */
+.wip-card {
+  border: 1px solid var(--rule);
+  background: var(--card-bg);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.6rem;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+}
+
+.wip-card:hover {
+  border-color: var(--accent);
+  background: var(--card-hover);
+  transform: translateX(3px);
+}
+
+.wip-card .paper-title {
+  margin-bottom: 0.25rem;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 /* ---------- Teaching cards ---------- */
 .teaching-card {
   border: 1px solid var(--rule);
@@ -433,5 +456,6 @@ footer p { margin-top: 0.5rem; }
 @media (max-width: 600px) {
   .ascii-header { font-size: 0.38rem; }
   .nature-scene { font-size: 0.5rem; }
+  .site-name { font-size: 1.5rem; }
   body { font-size: 0.95rem; }
 }
