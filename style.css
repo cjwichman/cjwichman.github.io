@@ -404,26 +404,6 @@ a.paper-title:hover {
   line-height: 1.4;
 }
 
-/* ---------- Teaching cards ---------- */
-.teaching-card {
-  border: 1px solid var(--rule);
-  background: var(--card-bg);
-  padding: 0.7rem 0.9rem;
-  margin-bottom: 0.6rem;
-  transition: border-color 0.2s, background 0.2s, transform 0.15s;
-  cursor: default;
-}
-
-.teaching-card:hover {
-  border-color: var(--accent);
-  background: var(--card-hover);
-  transform: translateX(3px);
-}
-
-.teaching-card .paper-title {
-  margin-bottom: 0.25rem;
-}
-
 /* ---------- Other writing cards ---------- */
 .writing-card {
   border: 1px solid var(--rule);
@@ -457,6 +437,41 @@ a.writing-title:hover {
   color: var(--text);
   text-decoration: underline;
 }
+
+.writing-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.5rem;
+  row-gap: 0.15rem;
+  align-items: baseline;
+  flex: 1;
+}
+
+.writing-meta .writing-title {
+  grid-column: 1 / -1;
+}
+
+
+/* ---------- Teaching cards ---------- */
+.teaching-card {
+  border: 1px solid var(--rule);
+  background: var(--card-bg);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.6rem;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  cursor: default;
+}
+
+.teaching-card:hover {
+  border-color: var(--accent);
+  background: var(--card-hover);
+  transform: translateX(3px);
+}
+
+.teaching-card .paper-title {
+  margin-bottom: 0.25rem;
+}
+
 
 /* ---------- News cards ---------- */
 .news-card {
