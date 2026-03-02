@@ -11,7 +11,7 @@
   --accent-h: #2d7a42;
   --rule:     #a0a88a;
   --card-bg:  #e8ebe0;
-  --card-hover: #2e3d0e;
+  --card-hover: #dde3d1;
   --max-w:    780px;
   --font:     'Courier Prime', 'Courier New', Courier, monospace;
 }
@@ -139,6 +139,8 @@ main {
   margin: 0 auto;
   padding: 2rem 1.5rem 3rem;
 }
+
+section { scroll-margin-top: 75px; }
 
 /* ---------- Fade-in on scroll ---------- */
 .fade-in {
